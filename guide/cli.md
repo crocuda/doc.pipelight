@@ -110,7 +110,7 @@ pipelight ls
 ```
 
 <div class="flex justify-start">
-    <img loading="lazy" src="/images/list.png" alt="list_vv" class="xs">
+    <img loading="lazy" src="/images/list.png" alt="list_vv" class="md">
 </div>
 
 Increase verbosity to get a good project grasp of your project current health.

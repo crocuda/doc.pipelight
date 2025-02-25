@@ -24,7 +24,7 @@ You can push code from a machine, build on another, and send the resulting
 archive on hosting servers. It allows you to use the latent computing power
 where it resides and drastically diminish cloud computing costs.
 
-### Manianimous Builders
+### Magnanimous Builders
 
 Glue your synergetic tools together within a pipeline (Libvirt, Docker, Ansible,
 pure Bash...). It then becomes pretty simple to share variables and environments
