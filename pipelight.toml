@@ -1,0 +1,27 @@
+##########################################
+# Production - to vps_main: hostry servers for now
+[[pipelines]]
+name = "deploy-vps"
+[[pipelines.triggers]]
+actions = ["manual"]
+[[pipelines.steps]]
+name = "build website"
+commands = [
+  # install deps
+  "bun install",
+  # build resources
+  "bun vitepress build",
+  # build bundle
+]
+[[pipelines.steps]]
+options.mode = "continue"
+name = "copy files to remote"
+commands = [
+  # Ensure destination exists
+  """
+    ssh hostry -C "mkdir -p /var/www/pipelight.dev"
+  """,
+  """
+    rsync --progress -azv ./.vitepress/dist/ hostry:/var/www/pipelight.dev
+  """,
+]

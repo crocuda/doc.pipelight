@@ -13,8 +13,9 @@ import {
 import { generate as uuid } from "https://deno.land/std/uuid/v1.ts";
 
 // Comand line option parser
-import { parse } from "https://deno.land/std/flags/mod.ts";
-const flags = parse(Deno.args, {
+import { parseArgs } from "jsr:@std/cli/parse-args";
+
+const flags = parseArgs(Deno.args, {
   string: ["host"],
   default: { host: "hostry" }
 });
