@@ -33,3 +33,6 @@ pnpm-debug.log*
 
 # pipelight
 .pipelight
+
+# NixOs
+.direnv/
