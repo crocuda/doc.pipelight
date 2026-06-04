@@ -19,9 +19,9 @@ name = "copy files to remote"
 commands = [
   # Ensure destination exists
   """
-    ssh hostry -C "mkdir -p /var/www/pipelight.dev"
+    ssh strike-1 -C "mkdir -p /var/www/pipelight.dev"
   """,
   """
-    rsync --progress -azv ./.vitepress/dist/ hostry:/var/www/pipelight.dev
+    rsync --progress -azv ./.vitepress/dist/ strike-1:/var/www/pipelight.dev
   """,
 ]

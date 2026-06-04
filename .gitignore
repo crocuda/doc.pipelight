@@ -1,9 +1,14 @@
 .DS_Store
 node_modules
 /dist
+
 .vitepress/build/
 .vitepress/dist/
 .vitepress/cache
+
+**/.vitepress/build/
+**/.vitepress/dist/
+**/.vitepress/cache
 
 # Heavy images
 # public/images/showcase.gif

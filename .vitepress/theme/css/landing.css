@@ -44,13 +44,13 @@
     @apply max-w-none w-full lg:text-6xl;
   }
   .main {
-    @apply lg:max-w-none grow md:px-6 !important;
+    @apply lg:max-w-none grow md:px-6;
   }
   .image {
     @apply lg:max-w-sm lg:mx-0;
   }
   .image-bg {
-    @apply h-36 w-36 m-auto !important;
+    @apply h-36 w-36 m-auto;
     @apply rounded-full;
     animation: neon-glow 2000ms infinite;
     animation-direction: alternate;

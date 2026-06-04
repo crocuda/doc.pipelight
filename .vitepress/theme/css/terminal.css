@@ -6,16 +6,16 @@
 .language-toml,
 .language-json {
   @apply rounded-lg;
-  @apply mx-0 !important;
+  @apply mx-0;
   .line {
     @apply whitespace-pre-wrap break-normal;
   }
 }
+
 .terminal {
+  @apply bg-white dark:bg-zinc-900;
   @apply md:max-w-3xl;
   @apply rounded-lg shadow-md;
-  @apply bg-white;
-  @apply dark:bg-gray-900;
   &.md {
     @apply text-xs sm:text-base;
     @apply px-4 md:px-6;
@@ -39,6 +39,7 @@
     @apply whitespace-nowrap break-keep;
   }
   p {
+    all: unset;
     @apply m-0;
   }
 }

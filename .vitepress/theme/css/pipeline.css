@@ -35,7 +35,7 @@
   }
   ul {
     @apply relative;
-    @apply my-0 py-0 !important;
+    @apply my-0 py-0;
     list-style: none;
     li {
       /** Branch spacing **/
